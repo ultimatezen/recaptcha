@@ -16,7 +16,7 @@
 			}
 
 			window.onloadCallback = function () {
-				var sitekey = getParamValue('sitekey');
+				var sitekey = getParamValue('sitekey') || 'defaultsitekey';
 
 				grecaptcha.render('recaptchaElement', {
 					'sitekey' : sitekey
